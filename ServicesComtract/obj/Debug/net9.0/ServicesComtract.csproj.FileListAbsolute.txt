@@ -1,0 +1,12 @@
+G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesComtract.deps.json
+G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesComtract.dll
+G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesComtract.pdb
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.GeneratedMSBuildEditorConfig.editorconfig
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.AssemblyInfoInputs.cache
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.AssemblyInfo.cs
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.csproj.CoreCompileInputs.cache
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.sourcelink.json
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.dll
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\refint\ServicesComtract.dll
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.pdb
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ref\ServicesComtract.dll

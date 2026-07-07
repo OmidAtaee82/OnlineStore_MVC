@@ -7,4 +7,9 @@
     <RootNamespace>Online_Store</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+
 </Project>

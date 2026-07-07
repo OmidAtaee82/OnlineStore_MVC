@@ -1,0 +1,32 @@
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\appsettings.Development.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\appsettings.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.staticwebassets.endpoints.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.exe
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.deps.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.runtimeconfig.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.dll
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.pdb
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.GeneratedMSBuildEditorConfig.editorconfig
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.AssemblyInfoInputs.cache
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.AssemblyInfo.cs
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.csproj.CoreCompileInputs.cache
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.MvcApplicationPartsAssemblyInfo.cache
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.RazorAssemblyInfo.cache
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.RazorAssemblyInfo.cs
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.sourcelink.json
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\scopedcss\bundle\Online Store.styles.css
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.build.json
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.build.json.cache
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.development.json
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.dll
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\refint\Online Store.dll
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.pdb
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.genruntimeconfig.cache
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\ref\Online Store.dll
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.staticwebassets.runtime.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\package-lock.json
+G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\package.json
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-dtbpwaloa3.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\twxcqkghtt-dtbpwaloa3.gz

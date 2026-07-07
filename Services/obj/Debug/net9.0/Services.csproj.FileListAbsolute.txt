@@ -1,0 +1,12 @@
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\Services.deps.json
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\Services.dll
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\Services.pdb
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.AssemblyInfo.cs
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.sourcelink.json
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.dll
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\refint\Services.dll
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.pdb
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\ref\Services.dll

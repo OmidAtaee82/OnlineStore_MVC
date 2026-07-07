@@ -1,0 +1,4 @@
+wwwroot\css\output.css
+wwwroot\css\site.css
+G:\proje-DotNet\Online Store\Online Store\wwwroot\css\output.css
+G:\proje-DotNet\Online Store\Online Store\wwwroot\css\site.css
