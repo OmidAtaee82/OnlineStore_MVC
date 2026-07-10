@@ -10,3 +10,11 @@ G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.dll
 G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\refint\Services.dll
 G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.pdb
 G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\ref\Services.dll
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\Services.runtimeconfig.json
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\Entity.dll
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\ServicesComtract.dll
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\Entity.pdb
+G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\ServicesComtract.pdb
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.csproj.AssemblyReference.cache
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.csproj.Up2Date
+G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.genruntimeconfig.cache

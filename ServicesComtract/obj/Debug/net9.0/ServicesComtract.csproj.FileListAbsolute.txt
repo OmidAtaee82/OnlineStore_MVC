@@ -10,3 +10,9 @@ G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.
 G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\refint\ServicesComtract.dll
 G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.pdb
 G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ref\ServicesComtract.dll
+G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesComtract.runtimeconfig.json
+G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\Entity.dll
+G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\Entity.pdb
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.csproj.AssemblyReference.cache
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\Services.5EB22576.Up2Date
+G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesComtract.genruntimeconfig.cache
