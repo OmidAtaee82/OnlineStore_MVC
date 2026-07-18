@@ -1,2 +1,11 @@
 G:\proje-DotNet\Online Store\Online Store\wwwroot\css\output.css
 wwwroot\css\output.css
+wwwroot\fonts\Sahel-Bold.eot
+wwwroot\fonts\Sahel-Bold.ttf
+wwwroot\fonts\Sahel-Bold.woff
+wwwroot\fonts\Yekan.eot
+wwwroot\fonts\Yekan.ttf
+wwwroot\fonts\Yekan.woff
+wwwroot\img\3.jpg
+wwwroot\img\logo.png
+wwwroot\img\omid.png

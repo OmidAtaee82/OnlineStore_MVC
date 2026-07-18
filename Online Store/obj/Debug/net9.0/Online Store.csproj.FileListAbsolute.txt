@@ -28,7 +28,6 @@ G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\ref\Online Store.dll
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Online Store.staticwebassets.runtime.json
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\package-lock.json
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\package.json
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-ehg70h8vqq.gz
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Azure.Core.dll
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Azure.Identity.dll
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Humanizer.dll
@@ -158,3 +157,4 @@ G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\ServicesComtract.pdb
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Services.pdb
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.csproj.AssemblyReference.cache
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online S.1C76CC0D.Up2Date
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-6ck886fhk0.gz

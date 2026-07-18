@@ -1,1 +1,128 @@
 ﻿@import "tailwindcss";
+
+*{
+    direction:rtl;
+}
+
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.eot') format('eot'),
+        url('../fonts/Yekan.woff') format('woff'),
+        url('../fonts/Yekan.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'Sahel';
+    src: url('../fonts/Sahel-Bold.eot') format('eot'),
+        url('../fonts/Sahel-Bold.woff') format('woff'),
+        url('../fonts/Sahel-Bold.ttf') format('ttf');
+}
+
+
+@theme {
+    --spacing-110: 110px;
+    --spacing-45: 45px;
+    --spacing-1: 1px;
+    --spacing-41: 41px;
+    --spacing-1200: 1200px;
+    --spacing-432: 432px;
+    --spacing-545: 545px;
+    --font-yekan: Yekan;
+    --font-sahel: Sahel;
+    --color-gray: #475569;
+    --color-WhiteSidebar: #fefeff;
+    --color-HeaderAdmin: #161022;
+}
+
+
+.megamenu-1 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.menu-1:hover .megamenu-1 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.megamenu-2 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.menu-2:hover .megamenu-2 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.megamenu-3 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.menu-3:hover .megamenu-3 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.megamenu-4 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.menu-4:hover .megamenu-4 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+.megamenu-5 {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.menu-5:hover .megamenu-5 {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.css-scroll {
+    overflow-y: auto;
+}
+
+    /* Chrome, Edge, Safari */
+    .css-scroll::-webkit-scrollbar {
+        display: none;
+    }
+/* Firefox */
+.css-scroll {
+    scrollbar-width: none;
+}
+
+
+.hide-text {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
