@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+}
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -26,7 +30,7 @@
 
                 <div class="font-sahel text-[15px] text-blue-950">اصلی</div>
 
-                <a href="dashboard.html" class="text-blue-100 bg-blue-900 h-10 flex items-center mt-4 pr-3 rounded-md">
+                <a href="/admin/dashboard" class="@(controller == "Dashboard" ? "text-blue-100 bg-blue-900" : "text-blue-900 hover:bg-blue-300") h-10 flex items-center mt-4 pr-3 rounded-md">
                     <div class="font-yekan flex gap-3 items-center text-lg">
                         <svg style="width: 26px;height: 26px;" xmlns="http://www.w3.org/2000/svg" fill="none"
                              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -39,8 +43,8 @@
 
                 <div class=" font-sahel text-[15px] mt-8 text-blue-950">مدیریت</div>
 
-                <a href="product.html"
-                   class="h-10 flex items-center mt-4 pr-3 rounded-md text-blue-900 hover:bg-blue-300">
+                <a href="/admin/products"
+                   class="h-10 flex items-center mt-4 pr-3 rounded-md @(controller == "Products" ? "text-blue-100 bg-blue-900" : "text-blue-900 hover:bg-blue-300")">
                     <div class="font-yekan flex gap-3 items-center text-lg">
                         <svg style="width: 26px;height: 26px;" xmlns="http://www.w3.org/2000/svg" fill="none"
                              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">

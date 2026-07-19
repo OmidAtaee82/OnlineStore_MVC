@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ServicesComtract;
 
 namespace Online_Store.Areas.Admin.Controllers
 {
@@ -7,10 +8,18 @@ namespace Online_Store.Areas.Admin.Controllers
     public class ProductsController : Controller
     {
 
+        protected readonly IProductService _productService;
+
+        public ProductsController(IProductService p)
+        {
+            _productService = p;
+        }
+
         [Route("/admin/products")]
         public IActionResult Products()
         {
-            return View();
+            var result = _productService.GetAllPtoducts();
+            return View(result);
         }
     }
 }
