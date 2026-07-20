@@ -1,5 +1,5 @@
-﻿@using Entity
-@model List<Product>
+﻿@using ViewModel.Product
+@model List<ProductListVM>
 
 @{
     ViewBag.Title = "داشبورد - محصولات";
@@ -65,8 +65,8 @@
                             </td>
                             <td class="border-b border-gray-300 p-3">@item.Price.ToString("N0")</td>
                             <td class="border-b border-gray-300 p-3">@(item.Discount.HasValue ? item.Discount.Value.ToString("N0"):"-")</td>
-                            <td class="border-b border-gray-300 p-3">@item.Category.Name</td>
-                            <td class="border-b border-gray-300 p-3">@item.Brand.Name</td>
+                            <td class="border-b border-gray-300 p-3">@item.CategoryName</td>
+                            <td class="border-b border-gray-300 p-3">@item.BrandName</td>
                             <td class="border-b border-gray-300 p-3">@(string.IsNullOrEmpty(item.Color) ? "-" : item.Color)</td>
                             <td class="border-b border-gray-300 p-3">
 

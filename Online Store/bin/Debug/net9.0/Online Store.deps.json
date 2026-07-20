@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
           "Services": "1.0.0",
-          "ServicesComtract": "1.0.0"
+          "ServicesContract": "1.0.0",
+          "ViewModel": "1.0.0"
         },
         "runtime": {
           "Online Store.dll": {}
@@ -956,7 +957,8 @@
         "dependencies": {
           "Entity": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
-          "ServicesComtract": "1.0.0"
+          "ServicesContract": "1.0.0",
+          "ViewModel": "1.0.0"
         },
         "runtime": {
           "Services.dll": {
@@ -965,13 +967,22 @@
           }
         }
       },
-      "ServicesComtract/1.0.0": {
+      "ServicesContract/1.0.0": {
         "dependencies": {
           "Entity": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
+          "ViewModel": "1.0.0"
         },
         "runtime": {
-          "ServicesComtract.dll": {
+          "ServicesContract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ViewModel/1.0.0": {
+        "runtime": {
+          "ViewModel.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1548,7 +1559,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "ServicesComtract/1.0.0": {
+    "ServicesContract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

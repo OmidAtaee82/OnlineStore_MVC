@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q5XsmpRWpWY=",
+  "dgSpecHash": "1PWsw6mT/Fw=",
   "success": true,
-  "projectFilePath": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesComtract.csproj",
+  "projectFilePath": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\albaloo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\albaloo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

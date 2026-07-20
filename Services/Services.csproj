@@ -20,7 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Entity\Entity.csproj" />
-    <ProjectReference Include="..\ServicesComtract\ServicesComtract.csproj" />
+    <ProjectReference Include="..\ServicesComtract\ServicesContract.csproj" />
+    <ProjectReference Include="..\ViewModel\ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

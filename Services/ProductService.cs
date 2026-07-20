@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ViewModel.Product;
 
 namespace Services
 {
@@ -20,13 +21,13 @@ namespace Services
         }
 
 
-        public List<Product> GetAllPtoducts()
+        public List<ProductListVM> GetAllPtoducts()
         {
 
             return _OnlineStoreDb.Products
                 .Include(x => x.Category)
                 .Include(x => x.Brand)
-                .Select(x => new Product
+                .Select(x => new ProductListVM
                 {
                     Id = x.Id , 
                     Name = x.Name , 
@@ -35,22 +36,9 @@ namespace Services
                     Price = x.Price , 
                     Discount = x.Discount , 
                     Color = x.Color , 
-                    Brand = x.Brand , 
-                    Category = x.Category
+                    BrandName = x.Brand.Name , 
+                    CategoryName = x.Category.Name
                 }).ToList();
-
-            //var result = _OnlineStoreDb.Products.Select(x=>new Product
-            //{
-            //    Id = x.Id , 
-            //    Name = x.Name , 
-            //    Description = x.Description , 
-            //    ProductImage = x.ProductImage , 
-            //    Price = x.Price , 
-            //    Discount = x.Discount , 
-            //    Color = x.Color , 
-            //    BrandId = x.BrandId , 
-            //    CategoryId = x.CategoryId
-            //}).ToList();
 
         }
 

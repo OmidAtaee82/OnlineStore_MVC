@@ -1,0 +1,12 @@
+G:\proje-DotNet\Online Store\ViewModel\bin\Debug\net9.0\ViewModel.deps.json
+G:\proje-DotNet\Online Store\ViewModel\bin\Debug\net9.0\ViewModel.dll
+G:\proje-DotNet\Online Store\ViewModel\bin\Debug\net9.0\ViewModel.pdb
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.AssemblyInfoInputs.cache
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.AssemblyInfo.cs
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.csproj.CoreCompileInputs.cache
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.sourcelink.json
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.dll
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\refint\ViewModel.dll
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ViewModel.pdb
+G:\proje-DotNet\Online Store\ViewModel\obj\Debug\net9.0\ref\ViewModel.dll
