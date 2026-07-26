@@ -12,8 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
-          "ServicesContract": "1.0.0",
-          "ViewModel": "1.0.0"
+          "ServicesContract": "1.0.0"
         },
         "runtime": {
           "Services.dll": {}
@@ -1011,19 +1010,10 @@
       "ServicesContract/1.0.0": {
         "dependencies": {
           "Entity": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
-          "ViewModel": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "runtime": {
           "ServicesContract.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "ViewModel/1.0.0": {
-        "runtime": {
-          "ViewModel.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1596,11 +1586,6 @@
       "sha512": ""
     },
     "ServicesContract/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6,6 +6,16 @@ wwwroot\fonts\Sahel-Bold.woff
 wwwroot\fonts\Yekan.eot
 wwwroot\fonts\Yekan.ttf
 wwwroot\fonts\Yekan.woff
+wwwroot\img\10.jpg
+wwwroot\img\15.jpg
+wwwroot\img\23.jpg
+wwwroot\img\26.jpeg
 wwwroot\img\3.jpg
+wwwroot\img\35.jpg
+wwwroot\img\43.jpg
+wwwroot\img\44.jpg
+wwwroot\img\45.jpg
+wwwroot\img\46.jpg
+wwwroot\img\6.jpg
 wwwroot\img\logo.png
 wwwroot\img\omid.png

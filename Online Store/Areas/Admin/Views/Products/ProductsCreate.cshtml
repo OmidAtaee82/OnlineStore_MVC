@@ -1,0 +1,109 @@
+﻿@using Online_Store.ViewModel.Product
+@model ProductCreateVM
+
+@{
+    ViewBag.Title = "داشبورد - محصول جدید ";
+}
+
+<div class="w-[80%] absolute right-[20%] top-[12%] pr-10 pl-10 text-white">
+
+    <div class="w-full pt-1 pb-10 mt-10">
+
+        <div class="w-full flex justify-between items-center">
+            <div>
+                <p class="text-3xl font-sahel">افزودن محصول جدید</p>
+            </div>
+            <a asp-area="Admin" asp-controller="Products" asp-action="Products"
+               class="bg-blue-300 text-black flex gap-2 font-yekan pr-7 pl-7 pt-3 pb-3 rounded-md">
+                مشاهده محصولات
+            </a>
+        </div>
+
+        <form method="post" action="/admin/products/create" enctype="multipart/form-data">
+
+            <div class="w-full mt-12 font-yekan">
+
+                <div class="grid grid-cols-2 gap-6">
+
+                    <div>
+                        <label>نام :</label>
+                        <input name="Name" type="text"
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                               placeholder="نام محصول (مثلا گوشی A55)" />
+                               <p class="text-red-400">@Html.ValidationMessage("Name")</p>
+                    </div>
+
+                    <div>
+                        <label>دسته بندی : </label>
+                        <select name="CategoryId" class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
+                            <option disabled selected>انتخاب دسته‌بندی</option>
+                            @foreach(var item in Model.Categories)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <p class="text-red-400">@Html.ValidationMessage("CategoryId")</p>
+                    </div>
+
+                    <div>
+                        <label>برند : </label>
+                        <select name="BrandId" class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
+                            <option value="" disabled selected>انتخاب دسته‌بندی</option>
+                            @foreach(var item in Model.Brands)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <p class="text-red-400">@Html.ValidationMessage("BrandId")</p>
+                    </div>
+
+                    <div>
+                        <label>قیمت :</label>
+                        <input name="Price" type="number"
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                               placeholder="قیمت محصول (مثلا 5000000)" />
+                        <p class="text-red-400">@Html.ValidationMessage("Price")</p>
+                    </div>
+
+                    <div>
+                        <label>تخفیف :</label>
+                        <input name="Discount" type="number"
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                               placeholder="تخفیف (%)" />
+                    </div>
+
+                    <div>
+                        <label>رنگ :</label>
+                        <input name="Color" type="text"
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                               placeholder="رنگ محصول (مثلا مشکی)" />
+                    </div>
+
+                </div>
+
+                <div class="mt-6">
+                    <label>عکس :</label>
+                    <input name="ProductImage" type="file"
+                           class="bg-white w-full mt-3 border-none text-black p-3 rounded-md placeholder:text-slate-500"
+                           placeholder="رنگ محصول (مثلا مشکی)" />
+                    <p class="text-red-400">@Html.ValidationMessage("ProductImage")</p>
+                </div>
+
+                <div class="mt-6">
+                    <label>توضیحات</label>
+                    <textarea name="Description" class="w-full mt-3 bg-white text-black border-none p-2 rounded-md placeholder:text-slate-500"
+                              placeholder="درباره محصول توضیح دهید"></textarea>
+                </div>
+
+                <div class="mt-6">
+                    <input type="submit" class="pr-5 pl-5 pt-2 pb-2 cursor-pointer bg-blue-400 hover:bg-blue-500 font-yekan rounded-md"
+                           value="ثبت محصول" />
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

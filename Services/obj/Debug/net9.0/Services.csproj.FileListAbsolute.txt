@@ -17,6 +17,4 @@ G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.csproj.AssemblyR
 G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.csproj.Up2Date
 G:\proje-DotNet\Online Store\Services\obj\Debug\net9.0\Services.genruntimeconfig.cache
 G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\ServicesContract.dll
-G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\ViewModel.dll
 G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\ServicesContract.pdb
-G:\proje-DotNet\Online Store\Services\bin\Debug\net9.0\ViewModel.pdb

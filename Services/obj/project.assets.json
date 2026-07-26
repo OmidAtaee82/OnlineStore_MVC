@@ -1617,24 +1617,13 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Entity": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
-          "ViewModel": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
         },
         "compile": {
           "bin/placeholder/ServicesContract.dll": {}
         },
         "runtime": {
           "bin/placeholder/ServicesContract.dll": {}
-        }
-      },
-      "ViewModel/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/ViewModel.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ViewModel.dll": {}
         }
       }
     }
@@ -4749,11 +4738,6 @@
       "type": "project",
       "path": "../ServicesComtract/ServicesContract.csproj",
       "msbuildProject": "../ServicesComtract/ServicesContract.csproj"
-    },
-    "ViewModel/1.0.0": {
-      "type": "project",
-      "path": "../ViewModel/ViewModel.csproj",
-      "msbuildProject": "../ViewModel/ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4762,8 +4746,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
-      "ServicesContract >= 1.0.0",
-      "ViewModel >= 1.0.0"
+      "ServicesContract >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4803,9 +4786,6 @@
             },
             "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj": {
               "projectPath": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj"
-            },
-            "G:\\proje-DotNet\\Online Store\\ViewModel\\ViewModel.csproj": {
-              "projectPath": "G:\\proje-DotNet\\Online Store\\ViewModel\\ViewModel.csproj"
             }
           }
         }

@@ -155,8 +155,6 @@ G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Entity.pdb
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\Services.pdb
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.csproj.AssemblyReference.cache
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online S.1C76CC0D.Up2Date
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-z3ro4qw0tq.gz
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\ServicesContract.dll
-G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\ViewModel.dll
 G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\ServicesContract.pdb
-G:\proje-DotNet\Online Store\Online Store\bin\Debug\net9.0\ViewModel.pdb
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-9rwcbumju5.gz

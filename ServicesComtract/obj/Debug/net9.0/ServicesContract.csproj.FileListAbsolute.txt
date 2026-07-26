@@ -3,9 +3,7 @@ G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesContract.
 G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesContract.dll
 G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ServicesContract.pdb
 G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\Entity.dll
-G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ViewModel.dll
 G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\Entity.pdb
-G:\proje-DotNet\Online Store\ServicesComtract\bin\Debug\net9.0\ViewModel.pdb
 G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesContract.csproj.AssemblyReference.cache
 G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesContract.GeneratedMSBuildEditorConfig.editorconfig
 G:\proje-DotNet\Online Store\ServicesComtract\obj\Debug\net9.0\ServicesContract.AssemblyInfoInputs.cache

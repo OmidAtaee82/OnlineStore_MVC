@@ -126,3 +126,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+
+.table-product:last-child td{
+    border-bottom:none;
+}
