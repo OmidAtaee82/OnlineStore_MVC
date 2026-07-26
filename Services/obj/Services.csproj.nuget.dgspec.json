@@ -87,14 +87,14 @@
         }
       }
     },
-    "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj": {
+    "G:\\proje-DotNet\\Online Store\\ServicesContract\\ServicesContract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj",
+        "projectUniqueName": "G:\\proje-DotNet\\Online Store\\ServicesContract\\ServicesContract.csproj",
         "projectName": "ServicesContract",
-        "projectPath": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj",
+        "projectPath": "G:\\proje-DotNet\\Online Store\\ServicesContract\\ServicesContract.csproj",
         "packagesPath": "C:\\Users\\albaloo\\.nuget\\packages\\",
-        "outputPath": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\obj\\",
+        "outputPath": "G:\\proje-DotNet\\Online Store\\ServicesContract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -136,24 +136,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -205,8 +187,8 @@
               "G:\\proje-DotNet\\Online Store\\Entity\\Entity.csproj": {
                 "projectPath": "G:\\proje-DotNet\\Online Store\\Entity\\Entity.csproj"
               },
-              "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj": {
-                "projectPath": "G:\\proje-DotNet\\Online Store\\ServicesComtract\\ServicesContract.csproj"
+              "G:\\proje-DotNet\\Online Store\\ServicesContract\\ServicesContract.csproj": {
+                "projectPath": "G:\\proje-DotNet\\Online Store\\ServicesContract\\ServicesContract.csproj"
               }
             }
           }

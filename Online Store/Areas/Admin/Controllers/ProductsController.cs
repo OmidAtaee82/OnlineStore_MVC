@@ -1,7 +1,7 @@
 ﻿using Entity;
 using Microsoft.AspNetCore.Mvc;
 using Online_Store.ViewModel.Product;
-using ServicesComtract;
+using ServicesContract;
 
 namespace Online_Store.Areas.Admin.Controllers
 {
@@ -91,6 +91,15 @@ namespace Online_Store.Areas.Admin.Controllers
             return RedirectToAction("Products");
 
         }
+
+
+        [HttpGet]
+        [Route("/admin/products/edit")]
+        public IActionResult ProductsEdit()
+        {
+            return View();
+        }
+
 
     }
 }

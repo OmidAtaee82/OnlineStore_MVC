@@ -1009,8 +1009,7 @@
       },
       "ServicesContract/1.0.0": {
         "dependencies": {
-          "Entity": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0"
+          "Entity": "1.0.0"
         },
         "runtime": {
           "ServicesContract.dll": {

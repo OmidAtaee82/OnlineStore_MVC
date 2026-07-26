@@ -1,7 +1,7 @@
 using Entity;
 using Microsoft.EntityFrameworkCore;
 using Services;
-using ServicesComtract;
+using ServicesContract;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();

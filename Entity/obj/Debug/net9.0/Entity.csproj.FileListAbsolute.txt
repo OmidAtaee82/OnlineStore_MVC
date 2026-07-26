@@ -1,6 +1,8 @@
 G:\proje-DotNet\Online Store\Entity\bin\Debug\net9.0\Entity.deps.json
+G:\proje-DotNet\Online Store\Entity\bin\Debug\net9.0\Entity.runtimeconfig.json
 G:\proje-DotNet\Online Store\Entity\bin\Debug\net9.0\Entity.dll
 G:\proje-DotNet\Online Store\Entity\bin\Debug\net9.0\Entity.pdb
+G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.AssemblyInfoInputs.cache
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.AssemblyInfo.cs
@@ -9,7 +11,5 @@ G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.sourcelink.json
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.dll
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\refint\Entity.dll
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.pdb
-G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\ref\Entity.dll
-G:\proje-DotNet\Online Store\Entity\bin\Debug\net9.0\Entity.runtimeconfig.json
-G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
 G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\Entity.genruntimeconfig.cache
+G:\proje-DotNet\Online Store\Entity\obj\Debug\net9.0\ref\Entity.dll

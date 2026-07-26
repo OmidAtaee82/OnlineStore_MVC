@@ -1,6 +1,6 @@
 ﻿using Entity;
 using Microsoft.EntityFrameworkCore;
-using ServicesComtract;
+using ServicesContract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
