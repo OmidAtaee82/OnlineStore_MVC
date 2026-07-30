@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Online_Store.ViewModel.Product
+@model ProductEditVM
+
+@{
     ViewBag.Title = "داشبورد - ویرایش محصول";
 }
 
@@ -16,76 +19,84 @@
             </a>
         </div>
 
-        <form method="post" action="">
+        <form method="post" action="/admin/products/edit/@Model.Id" enctype="multipart/form-data">
 
             <div class="w-full mt-12 font-yekan">
 
                 <div class="grid grid-cols-2 gap-6">
 
+                    <input type="hidden" name="Id" value="@Model.Id"/>
+
                     <div>
                         <label>نام :</label>
-                        <input type="text"
+                        <input type="text" name="Name" value="@Model.Name"
                                class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
                                placeholder="نام محصول (مثلا گوشی A55)" />
                     </div>
 
                     <div>
                         <label>دسته بندی : </label>
-                        <select class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
-                            <option disabled selected>انتخاب دسته‌بندی</option>
-                            <option>لباس مردانه</option>
-                            <option>لباس زنانه</option>
-                            <option>کفش</option>
+                        <select name="CategoryId" class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
+                            <option disabled>انتخاب دسته‌بندی</option>
+                            @foreach(var item in Model.Categories)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
                         </select>
                     </div>
 
                     <div>
                         <label>برند : </label>
-                        <select class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
-                            <option disabled selected>انتخاب دسته‌بندی</option>
-                            <option>ادیداس</option>
-                            <option>نایک</option>
+                        <select name="BrandId" class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
+                            <option disabled>انتخاب دسته‌بندی</option>
+                            @foreach(var item in Model.Brands)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
                         </select>
                     </div>
 
                     <div>
                         <label>قیمت :</label>
-                        <input type="number"
+                        <input type="number" name="Price" value="@Model.Price.Value.ToString("0")"
                                class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
                                placeholder="قیمت محصول (مثلا 5000000)" />
                     </div>
 
                     <div>
                         <label>تخفیف :</label>
-                        <input type="number"
+                        <input type="number" name="Discount" value="@Model.Discount"
                                class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
                                placeholder="تخفیف (%)" />
                     </div>
 
                     <div>
                         <label>رنگ :</label>
-                        <input type="text"
+                        <input type="text" name="Color" value="@Model.Color"
                                class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
                                placeholder="رنگ محصول (مثلا مشکی)" />
                     </div>
 
                 </div>
 
+                <input type="hidden" name="CurrentImage" value="@Model.CurrentImage" />
+
                 <div class="mt-6">
                     <label>عکس :</label>
-                    <input type="file"
+                    <input type="file" name="ProductImage" value="@Model.ProductImage"
                            class="bg-white w-full mt-3 border-none text-black p-3 rounded-md placeholder:text-slate-500"
                            placeholder="رنگ محصول (مثلا مشکی)" />
+                           <img src="@Model.CurrentImage" alt="" class="w-20 h-20 rounded-md mt-6"/>
                 </div>
 
                 <div class="mt-6">
                     <label>توضیحات</label>
-                    <textarea class="w-full mt-3 bg-white text-black border-none p-2 rounded-md placeholder:text-slate-500"
-                              placeholder="درباره محصول توضیح دهید"></textarea>
+                    <textarea name="Description" class="w-full mt-3 bg-white text-black border-none p-2 rounded-md placeholder:text-slate-500"
+                              placeholder="درباره محصول توضیح دهید">@Model.Description</textarea>
                 </div>
 
                 <div class="mt-6">
-                    <input type="submit" class="pr-5 pl-5 pt-2 pb-2 cursor-pointer bg-yellow-400 hover:bg-blue-500 font-yekan rounded-md"
+                    <input type="submit" class="pr-5 pl-5 pt-2 pb-2 cursor-pointer bg-blue-400 hover:bg-blue-500 font-yekan rounded-md"
                            value="ویرایش محصول" />
                 </div>
 

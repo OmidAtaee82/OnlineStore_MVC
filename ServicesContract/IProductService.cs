@@ -11,9 +11,11 @@ namespace ServicesContract
     {
 
         List<Product> GetAllProducts();
+        Product GetProduct(int id);
         List<Category> GetAllCategories();
         List<Brand> GetAllBrands();
         void AddProduct(Product model);
+        void UpdateProduct(Product model);
 
     }
 }

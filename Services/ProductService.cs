@@ -61,10 +61,38 @@ namespace Services
         }
 
 
+        public Product GetProduct(int id)
+        {
+            var product = _OnlineStoreDb.Products.FirstOrDefault(x=>x.Id == id);
+            return product;
+        }
+
+
         public void AddProduct(Product model)
         {
             _OnlineStoreDb.Products.Add(model);
             _OnlineStoreDb.SaveChanges();
+        }
+
+
+        public void UpdateProduct(Product model)
+        {
+            var product = _OnlineStoreDb.Products.FirstOrDefault(x => x.Id == model.Id);
+
+            if(product != null)
+            {
+                product.Name = model.Name;
+                product.Description = model.Description;
+                product.ProductImage = model.ProductImage;
+                product.Price = model.Price;
+                product.Discount = model.Discount;
+                product.Color = model.Color;
+                product.CategoryId = model.CategoryId;
+                product.BrandId = model.BrandId;
+            }
+
+            _OnlineStoreDb.SaveChanges();
+
         }
         
 

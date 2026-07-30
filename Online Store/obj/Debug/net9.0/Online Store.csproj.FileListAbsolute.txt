@@ -146,7 +146,6 @@ G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.RazorAss
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.RazorAssemblyInfo.cs
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.sourcelink.json
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\scopedcss\bundle\Online Store.styles.css
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-9rwcbumju5.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.build.json
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.build.json.cache
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\staticwebassets.development.json
@@ -158,3 +157,4 @@ G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\refint\Online Store.d
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.pdb
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.genruntimeconfig.cache
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\ref\Online Store.dll
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-wkqe1e5g92.gz
