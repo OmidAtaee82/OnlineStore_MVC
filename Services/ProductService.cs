@@ -63,7 +63,10 @@ namespace Services
 
         public Product GetProduct(int id)
         {
-            var product = _OnlineStoreDb.Products.FirstOrDefault(x=>x.Id == id);
+            var product = _OnlineStoreDb.Products
+                .Include(x=>x.Category)
+                .Include(x=>x.Brand)
+                .FirstOrDefault(x=>x.Id == id);
             return product;
         }
 

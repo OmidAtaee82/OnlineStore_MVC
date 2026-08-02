@@ -40,6 +40,27 @@ namespace Online_Store.Areas.Admin.Controllers
         }
 
 
+        [Route("/admin/products/{id}")]
+        public IActionResult Product(int id)
+        {
+            var product = _productService.GetProduct(id);
+            var model = new ProductVM();
+            if (product != null)
+            {
+                model.Id = product.Id;
+                model.Name = product.Name;
+                model.Description = product.Description;
+                model.ProductImage = product.ProductImage;
+                model.Price = product.Price;
+                model.Discount = product.Discount;
+                model.Color = product.Color;
+                model.BrandName = product.Brand.Name;
+                model.CategoryName = product.Category.Name;
+            }
+            return View(model);
+        }
+
+
         [HttpGet]
         [Route("/admin/products/create")]
         public IActionResult ProductsCreate()
