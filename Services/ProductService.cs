@@ -97,6 +97,20 @@ namespace Services
             _OnlineStoreDb.SaveChanges();
 
         }
+
+
+        public void DeleteProduct(int id)
+        {
+            var product = _OnlineStoreDb.Products.FirstOrDefault(x=>x.Id == id);
+
+            if (product != null)
+            {
+                _OnlineStoreDb.Products.Remove(product);
+            }
+
+            _OnlineStoreDb.SaveChanges();
+
+        }
         
 
     }

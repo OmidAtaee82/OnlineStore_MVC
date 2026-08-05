@@ -11,9 +11,9 @@
 
         <div class="w-full flex justify-between items-center">
             <div>
-                <p class="text-3xl font-sahel">افزودن محصول جدید</p>
+                <p class="text-3xl font-sahel">نمایش جزئیات محصول</p>
             </div>
-            <a href="product.html"
+            <a asp-area="Admin" asp-controller="Products" asp-action="Products"
                class="bg-blue-300 text-black flex gap-2 font-yekan pr-7 pl-7 pt-3 pb-3 rounded-md">
                 مشاهده محصولات
             </a>
@@ -28,51 +28,44 @@
                     <div>
                         <label>نام :</label>
                         <input name="Name" value="@Model.Name" disabled type="text"
-                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
-                               placeholder="نام محصول (مثلا گوشی A55)" />
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"/>
                     </div>
 
                     <div>
                         <label>دسته بندی : </label>
                         <input name="Name" value="@Model.CategoryName" disabled type="text"
-                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
-                               placeholder="انتخاب دسته بندی" />
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"/>
                     </div>
 
                     <div>
                         <label>برند : </label>
                         <input name="BrandId" value="@Model.BrandName" disabled type="text"
-                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
-                               placeholder="انتخاب برند محصول" />
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"/>
                     </div>
 
                     <div>
                         <label>قیمت :</label>
                         <input name="Price" value="@Model.Price.ToString("0")" disabled type="number"
-                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
-                               placeholder="قیمت محصول (مثلا 5000000)" />
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"/>
                     </div>
 
                     <div>
                         <label>تخفیف :</label>
                         <input name="Discount" value="@Model.Discount" disabled type="number"
-                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
-                               placeholder="تخفیف (%)" />
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"/>
                     </div>
 
                     <div>
                         <label>رنگ :</label>
                         <input name="Color" value="@Model.Color" disabled type="text"
-                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
-                               placeholder="رنگ محصول (مثلا مشکی)" />
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"/>
                     </div>
 
                 </div>
 
                 <div class="mt-6">
                     <label>توضیحات</label>
-                    <textarea disabled name="Description" class="w-full mt-3 bg-white text-black border-none p-2 rounded-md placeholder:text-slate-500"
-                              placeholder="درباره محصول توضیح دهید">@Model.Description</textarea>
+                    <textarea disabled name="Description" class="w-full mt-3 bg-white text-black border-none p-2 rounded-md placeholder:text-slate-500">@Model.Description</textarea>
                 </div>
 
                 <div class="mt-6">

@@ -131,3 +131,26 @@
 .table-product:last-child td{
     border-bottom:none;
 }
+
+/*
+shadow-css {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color:red;
+}*/
+
+.box-modal {
+    width: 35%;
+    background-color: white;
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    padding-bottom:20px;
+}
+
+
+.header-modal{
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}

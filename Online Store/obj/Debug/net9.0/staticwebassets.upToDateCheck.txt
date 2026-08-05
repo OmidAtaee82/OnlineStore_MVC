@@ -1,3 +1,4 @@
+G:\proje-DotNet\Online Store\Online Store\wwwroot\js\DeleteProduct.js
 G:\proje-DotNet\Online Store\Online Store\wwwroot\css\output.css
 wwwroot\css\output.css
 wwwroot\fonts\Sahel-Bold.eot
@@ -21,3 +22,4 @@ wwwroot\img\46.jpg
 wwwroot\img\6.jpg
 wwwroot\img\logo.png
 wwwroot\img\omid.png
+wwwroot\js\DeleteProduct.js

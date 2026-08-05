@@ -16,6 +16,7 @@ namespace ServicesContract
         List<Brand> GetAllBrands();
         void AddProduct(Product model);
         void UpdateProduct(Product model);
+        void DeleteProduct(int id);
 
     }
 }

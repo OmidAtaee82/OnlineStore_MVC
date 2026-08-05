@@ -83,7 +83,7 @@
                                         </svg>
                                     </a>
 
-                                    <a href="#">
+                                    <a href="#" onclick="openDeleteModal(@item.Id , '@item.Name')">
                                         <svg color="red" style="width: 25px;height: 25px;"
                                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                              stroke-width="1.5" stroke="currentColor">
@@ -115,6 +115,27 @@
 
         </div>
 
+    </div>
+
+</div>
+
+
+
+<div class="box-modal hidden" id="delete-modal">
+
+    <div class="w-full text-2xl font-sahel p-4 text-center bg-blue-500 header-modal">حذف محصول</div>
+    <div class="w-full h-1 bg-slate-300 m-auto mt-6"></div>
+    <div class="w-full mt-6 text-lg font-yekan text-center pr-4 pl-4" id="delete-text">آیا از حذف شلوار زنانه مطمئن هستید ؟ </div>
+
+    <div class="w-full h-1 bg-slate-300 m-auto mt-6"></div>
+
+    <div class="w-full mt-6 flex justify-center gap-5">
+        
+        <form method="post" id="delete-form">
+            <button type="submit" class="pr-10 pl-10 pt-2 pb-2 bg-red-500 text-white font-yekan rounded-md cursor-pointer">بله</button>
+        </form>
+
+        <button id="cancel-delete" class="pr-10 pl-10 pt-2 pb-2 bg-gray-300 font-yekan rounded-md cursor-pointer">خیر</button>
     </div>
 
 </div>

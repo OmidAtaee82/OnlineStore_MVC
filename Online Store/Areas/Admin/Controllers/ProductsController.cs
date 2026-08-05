@@ -182,5 +182,21 @@ namespace Online_Store.Areas.Admin.Controllers
         }
 
 
+        [HttpPost]
+        [Route("/admin/products/delete/{id}")]
+        public IActionResult ProductsDelete(int id)
+        {
+            var get_product = _productService.GetProduct(id);
+
+            if(get_product != null)
+            {
+                _productService.DeleteProduct(id);
+            }
+
+            return RedirectToAction("Products");
+
+        }
+
+
     }
 }
