@@ -9,7 +9,9 @@ wwwroot\fonts\Yekan.ttf
 wwwroot\fonts\Yekan.woff
 wwwroot\img\10.jpg
 wwwroot\img\15.jpg
+wwwroot\img\21.jpg
 wwwroot\img\23.jpg
+wwwroot\img\25.jpg
 wwwroot\img\26.jpeg
 wwwroot\img\3.jpg
 wwwroot\img\32.jpg

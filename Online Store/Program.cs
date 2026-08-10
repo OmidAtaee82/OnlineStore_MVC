@@ -10,6 +10,7 @@ builder.Services.AddDbContext<OmidOnlineStoreDB>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDB"));
 });
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService , CategoryService>();
 var app = builder.Build();
 app.MapControllers();
 app.UseStaticFiles();

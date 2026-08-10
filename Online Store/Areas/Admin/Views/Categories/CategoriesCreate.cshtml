@@ -1,0 +1,67 @@
+﻿@using Online_Store.ViewModel.Categories
+@model List<CategoryVM>
+
+@{
+    ViewBag.Title = "داشبورد - ایجاد دسته بندی جدید";
+}
+
+<div class="w-[80%] absolute right-[20%] top-[12%] pr-10 pl-10 text-white">
+
+    <div class="w-full pt-1 pb-10 mt-10">
+
+        <div class="w-full flex justify-between items-center">
+            <div>
+                <p class="text-3xl font-sahel">افزودن دسته بندی جدید</p>
+            </div>
+            <a asp-area="Admin" asp-controller="Categories" asp-action="Categories"
+               class="bg-blue-300 text-black flex gap-2 font-yekan pr-7 pl-7 pt-3 pb-3 rounded-md">
+                مشاهده دسته بندی
+            </a>
+        </div>
+
+        <form method="post" action="/admin/categories/create" enctype="multipart/form-data">
+
+            <div class="w-full mt-12 font-yekan">
+
+                <div class="grid grid-cols-2 gap-6">
+
+                    <div>
+                        <label>نام :</label>
+                        <input type="text" name="Name"
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                               placeholder="نام دسته (مثلا موبایل)" />
+                    </div>
+
+                    <div>
+                        <label>دسته بندی : </label>
+                        <select name="ParentId" class="w-full mt-3 rounded-md text-black bg-white p-2 border-none">
+                            <option disabled selected>انتخاب دسته‌بندی</option>
+                            <option value="0">دسته اصلی</option>
+                            @foreach(var item in Model)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="mt-6">
+                    <label>عکس :</label>
+                    <input type="file" name="CategoryImage"
+                           class="bg-white w-full mt-3 border-none text-black p-3 rounded-md placeholder:text-slate-500"
+                           placeholder="رنگ محصول (مثلا مشکی)" />
+                </div>
+
+                <div class="mt-6">
+                    <input type="submit" class="pr-5 pl-5 pt-2 pb-2 cursor-pointer bg-blue-400 hover:bg-blue-500 font-yekan rounded-md"
+                           value="ثبت دسته" />
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
