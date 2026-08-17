@@ -1,0 +1,56 @@
+﻿@using Online_Store.ViewModel.Categories
+@model CategoryVM
+
+@{
+    ViewBag.Title = "داشبورد - نمایش اطلاعات دسته بندی";
+}
+
+
+<div class="w-[80%] absolute right-[20%] top-[12%] pr-10 pl-10 text-white">
+
+    <div class="w-full pt-1 pb-10 mt-10">
+
+        <div class="w-full flex justify-between items-center">
+            <div>
+                <p class="text-3xl font-sahel">نمایش جزئیات دسته بندی </p>
+            </div>
+            <a asp-area="Admin" asp-controller="Categories" asp-action="Categories"
+               class="bg-blue-300 text-black flex gap-2 font-yekan pr-7 pl-7 pt-3 pb-3 rounded-md">
+                مشاهده دسته بندی
+            </a>
+        </div>
+
+        <form method="post" action="">
+
+            <div class="w-full mt-12 font-yekan">
+
+                <div class="grid grid-cols-2 gap-6">
+
+                    <div>
+                        <label>نام :</label>
+                        <input type="text" name="Name" value="@Model.Name" disabled
+                               class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                               placeholder="نام دسته (مثلا موبایل)" />
+                    </div>
+
+                    <div>
+                        <label>دسته بندی : </label>
+                        <input disabled type="text" name="ParentId" value="@(Model.ParentName == null ? "دسته اصلی" : Model.ParentName)"
+                            class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500" 
+                            placeholder="انتخاب دسته بندی" />
+                    </div>
+
+                </div>
+
+                <div class="mt-6">
+                    <label>عکس :</label>
+                    <img src="@Model.CategoryImage" alt="" class="w-20 h-20 rounded-md mt-6" />
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

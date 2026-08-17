@@ -11,7 +11,9 @@ namespace ServicesContract
     {
 
         List<Category> GetAllCategory();
+        Category GetCategory(int id);
         void AddCategory(Category category);
+        void UpdateCategory(Category model);
 
     }
 }

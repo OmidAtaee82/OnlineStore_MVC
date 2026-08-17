@@ -1,4 +1,5 @@
 ﻿using Entity;
+using Microsoft.EntityFrameworkCore;
 using ServicesContract;
 using System;
 using System.Collections.Generic;
@@ -32,10 +33,43 @@ namespace Services
         }
 
 
+        public Category GetCategory(int id)
+        {
+            var category = _OnlineStoreDb.Categories
+                .Include(x=>x.Parent)
+                .FirstOrDefault(x=>x.Id == id);
+
+            if(category == null)
+            {
+                throw new Exception("دسته بندی مورد نظر یافت نشد ! ");
+            }
+
+            return category;
+
+        }
+
+
         public void AddCategory(Category category)
         {
             _OnlineStoreDb.Categories.Add(category);
             _OnlineStoreDb.SaveChanges();
+        }
+
+
+        public void UpdateCategory(Category model)
+        {
+
+            var category = _OnlineStoreDb.Categories.FirstOrDefault(x => x.Id == model.Id);
+
+            if(category != null)
+            {
+                category.Name = model.Name;
+                category.CategoryImage = model.CategoryImage;
+                category.ParentId = model.ParentId;
+            }
+
+            _OnlineStoreDb.SaveChanges();
+
         }
 
     }
