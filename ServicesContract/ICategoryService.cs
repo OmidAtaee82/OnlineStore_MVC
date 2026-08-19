@@ -14,6 +14,7 @@ namespace ServicesContract
         Category GetCategory(int id);
         void AddCategory(Category category);
         void UpdateCategory(Category model);
+        void DeleteCategory(int id);
 
     }
 }

@@ -1,5 +1,6 @@
 G:\proje-DotNet\Online Store\Online Store\wwwroot\js\DeleteProduct.js
 G:\proje-DotNet\Online Store\Online Store\wwwroot\css\output.css
+G:\proje-DotNet\Online Store\Online Store\wwwroot\js\DeleteCategory.js
 wwwroot\css\output.css
 wwwroot\fonts\Sahel-Bold.eot
 wwwroot\fonts\Sahel-Bold.ttf
@@ -27,4 +28,5 @@ wwwroot\img\46.jpg
 wwwroot\img\6.jpg
 wwwroot\img\logo.png
 wwwroot\img\omid.png
+wwwroot\js\DeleteCategory.js
 wwwroot\js\DeleteProduct.js

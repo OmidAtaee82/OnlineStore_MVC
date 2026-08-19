@@ -72,5 +72,26 @@ namespace Services
 
         }
 
+
+        public void DeleteCategory(int id)
+        {
+
+            var category = _OnlineStoreDb.Categories.FirstOrDefault(x=>x.Id == id);
+
+            if(category == null)
+            {
+                return;
+            }
+
+            var children = _OnlineStoreDb.Categories
+                .Where(x => x.ParentId == id)
+                .ToList();
+
+            _OnlineStoreDb.Categories.RemoveRange(children);
+            _OnlineStoreDb.Categories.Remove(category);
+            _OnlineStoreDb.SaveChanges();
+
+        }
+
     }
 }

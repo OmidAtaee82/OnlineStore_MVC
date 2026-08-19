@@ -158,4 +158,5 @@ G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.pdb
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.genruntimeconfig.cache
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\ref\Online Store.dll
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\knub45c4s7-17i5fhn25h.gz
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-dvcx2cu3i3.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-fmjk9kp4n5.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\t0ty9pr64l-zj4aqgbk34.gz

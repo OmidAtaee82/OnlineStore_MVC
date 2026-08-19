@@ -163,5 +163,20 @@ namespace Online_Store.Areas.Admin.Controllers
 
         }
 
+
+        [HttpPost]
+        [Route("/admin/categories/delete/{id}")]
+        public IActionResult CategoriesDelete(int id)
+        {
+            var category = _categoryService.GetCategory(id);
+
+            if(category != null)
+            {
+                _categoryService.DeleteCategory(id);
+            }
+
+            return RedirectToAction("Categories");
+        }
+
     }
 }
