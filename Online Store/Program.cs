@@ -11,6 +11,7 @@ builder.Services.AddDbContext<OmidOnlineStoreDB>(option =>
 });
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService , CategoryService>();
+builder.Services.AddScoped<IBrandService, BrandService>();
 var app = builder.Build();
 app.MapControllers();
 app.UseStaticFiles();

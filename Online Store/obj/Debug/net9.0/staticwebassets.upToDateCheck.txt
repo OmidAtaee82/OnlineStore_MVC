@@ -17,6 +17,7 @@ wwwroot\img\23.jpg
 wwwroot\img\25.jpg
 wwwroot\img\26.jpeg
 wwwroot\img\27.jpg
+wwwroot\img\28.jpg
 wwwroot\img\3.jpg
 wwwroot\img\32.jpg
 wwwroot\img\35.jpg

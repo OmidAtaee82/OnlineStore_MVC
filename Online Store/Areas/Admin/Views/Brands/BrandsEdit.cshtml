@@ -1,0 +1,55 @@
+﻿@using Online_Store.ViewModel.Brands
+@model BrandEditVM
+
+@{
+    ViewBag.Title = "داشبورد - ویرایش برند";
+}
+
+<div class="w-[80%] absolute right-[20%] top-[12%] pr-10 pl-10 text-white">
+
+    <div class="w-full pt-1 pb-10 mt-10">
+
+        <div class="w-full flex justify-between items-center">
+            <div>
+                <p class="text-3xl font-sahel">ویرایش برند</p>
+            </div>
+            <a asp-area="Admin" asp-controller="Brands" asp-action="Brands"
+               class="bg-blue-300 text-black flex gap-2 font-yekan pr-7 pl-7 pt-3 pb-3 rounded-md">
+                مشاهده برند ها
+            </a>
+        </div>
+
+        <form method="post" action="">
+
+            <div class="w-full mt-12 font-yekan">
+
+                <div>
+                    <label>نام : </label>
+                    <input type="text" name="Name" value="@Model.Name"
+                           class="bg-white w-full mt-3 border-none text-black p-2 rounded-md placeholder:text-slate-500"
+                           placeholder="نام برند (مثلا نایک)" />
+                </div>
+
+                <div class="mt-6">
+                    <label>عکس : </label>
+                    <input type="file" name="BrandImage"
+                           class="bg-white w-full mt-3 border-none text-black p-3 rounded-md placeholder:text-slate-500" />
+                </div>
+
+                <div class="mt-6">
+                    <img src="@Model.ViewImage" alt="" class="w-20 h-20 rounded-md mt-6" />
+                </div>
+
+                <div class="mt-6">
+                    <input type="submit"
+                           class="pr-5 pl-5 pt-2 pb-2 cursor-pointer bg-blue-400 hover:bg-blue-500 font-yekan rounded-md"
+                           value="ویرایش دسته" />
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
