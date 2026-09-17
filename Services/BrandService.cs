@@ -69,5 +69,20 @@ namespace Services
 
         }
 
+
+        public void DeleteBrand(int id)
+        {
+
+            var brand = _OnlieStoreDb.Brands.FirstOrDefault(x=>x.Id == id);
+
+            if(brand != null)
+            {
+                _OnlieStoreDb.Brands.Remove(brand);
+            }
+
+            _OnlieStoreDb.SaveChanges();
+
+        }
+
     }
 }

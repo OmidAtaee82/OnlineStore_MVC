@@ -107,5 +107,58 @@ namespace Online_Store.Areas.Admin.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [Route("/admin/brands/edit/{id}")]
+        public IActionResult BrandsEdit(BrandEditVM model , int id)
+        {
+
+            var get_brand = _brandService.GetBrand(id);
+
+            if(get_brand != null)
+            {
+                string imgPath = get_brand.BrandImage;
+
+                if (model.BrandImage != null)
+                {
+                    var fileName = model.BrandImage.FileName;
+
+                    var path = Path.Combine(_env.WebRootPath, "img", fileName);
+
+                    using (var path_file = new FileStream(path, FileMode.Create))
+                    {
+                        model.BrandImage.CopyTo(path_file);
+                    }
+
+                    imgPath = "/img/" + fileName;
+
+                }
+
+                _brandService.UpdateBrand(new Brand
+                {
+                    Id = model.Id,
+                    Name = model.Name,
+                    BrandImage = imgPath
+                });
+
+            }
+
+            return RedirectToAction("Brands");
+        }
+
+
+        [HttpPost]
+        [Route("/admin/brands/delete/{id}")]
+        public IActionResult BrandsDelete(int id)
+        {
+            var brand = _brandService.GetBrand(id);
+
+            if(brand != null)
+            {
+                _brandService.DeleteBrand(id);
+            }
+
+            return RedirectToAction("Brands");
+        }
+
     }
 }

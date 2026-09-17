@@ -13,5 +13,6 @@ namespace ServicesContract
         Brand GetBrand(int id);
         void AddBrand(Brand brand);
         void UpdateBrand(Brand model);
+        void DeleteBrand(int id);
     }
 }
