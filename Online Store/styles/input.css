@@ -1,23 +1,18 @@
 ﻿@import "tailwindcss";
 
-*{
-    direction:rtl;
+* {
+    direction: rtl;
 }
-
 
 @font-face {
     font-family: 'Yekan';
-    src: url('../fonts/Yekan.eot') format('eot'),
-        url('../fonts/Yekan.woff') format('woff'),
-        url('../fonts/Yekan.ttf') format('ttf');
+    src: url('../fonts/Yekan.eot') format('eot'), url('../fonts/Yekan.woff') format('woff'), url('../fonts/Yekan.ttf') format('ttf');
 }
 
 
 @font-face {
     font-family: 'Sahel';
-    src: url('../fonts/Sahel-Bold.eot') format('eot'),
-        url('../fonts/Sahel-Bold.woff') format('woff'),
-        url('../fonts/Sahel-Bold.ttf') format('ttf');
+    src: url('../fonts/Sahel-Bold.eot') format('eot'), url('../fonts/Sahel-Bold.woff') format('woff'), url('../fonts/Sahel-Bold.ttf') format('ttf');
 }
 
 
@@ -27,13 +22,19 @@
     --spacing-1: 1px;
     --spacing-41: 41px;
     --spacing-1200: 1200px;
-    --spacing-432: 432px;
     --spacing-545: 545px;
+    --spacing-68: 68px;
+    --spacing-241: 241px;
+    --spacing-390: 390px;
+    --spacing-500: 500px;
+    --spacing-610: 610px;
+    --spacing-1270: 1270px;
+    --spacing-90: 90px;
     --font-yekan: Yekan;
     --font-sahel: Sahel;
     --color-gray: #475569;
     --color-WhiteSidebar: #fefeff;
-    --color-HeaderAdmin: #161022;
+    --color-HeaderAdmin: #161022
 }
 
 
@@ -128,29 +129,92 @@
 }
 
 
-.table-product:last-child td{
-    border-bottom:none;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 50px;
 }
 
-/*
-shadow-css {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    background-color:red;
-}*/
 
-.box-modal {
-    width: 35%;
+.card {
+    width: 30%;
     background-color: white;
-    position: absolute;
-    top: 30%;
-    right: 35%;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    padding-bottom:20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.15);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px 20px 10px;
 }
 
 
-.header-modal{
-    border-top-left-radius:20px;
-    border-top-right-radius:20px;
+.img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+.heading {
+    margin: 10px 0 15px;
+}
+
+
+.description {
+    margin-bottom: 20px;
+}
+
+
+.btn {
+    width: 45%;
+    padding: 10px 40px 10px 20px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-top: auto;
+}
+
+
+.slide-next {
+    animation: slideNext 0.5s ease;
+}
+
+.slide-prev {
+    animation: slidePrev 0.5s ease;
+}
+
+@keyframes slideNext {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidePrev {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.sidebar-product {
+    overflow-y: auto;
+}
+
+    /* Chrome, Edge, Safari */
+    .sidebar-product::-webkit-scrollbar {
+        display: none;
+    }
+/* Firefox */
+.sidebar-product {
+    scrollbar-width: none;
 }
