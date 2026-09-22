@@ -2641,6 +2641,7 @@ G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\cubes-stacked.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\brands\blackberry.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\arrow-up-from-water-pump.svg
+G:\proje-DotNet\Online Store\Online Store\wwwroot\js\code.js
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\regular\cloud.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\brands\airbnb.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\solid\mars-and-venus.svg
@@ -11669,17 +11670,28 @@ wwwroot\img\adiddas.png
 wwwroot\img\apple.png
 wwwroot\img\behdasht.png
 wwwroot\img\digital-kala.png
+wwwroot\img\gramkon.png
 wwwroot\img\huawi.png
 wwwroot\img\kafgir.png
+wwwroot\img\kote.png
 wwwroot\img\laptop.png
 wwwroot\img\lebas.png
+wwwroot\img\leg.png
 wwwroot\img\logo.png
 wwwroot\img\mobile.png
 wwwroot\img\nike.png
+wwwroot\img\nimtane.png
 wwwroot\img\omid.png
+wwwroot\img\s1.png
+wwwroot\img\s2.png
+wwwroot\img\sam.png
 wwwroot\img\samsung.png
 wwwroot\img\sony.png
+wwwroot\img\t1.png
+wwwroot\img\t2.png
+wwwroot\img\top.png
 wwwroot\img\varzesh.png
+wwwroot\js\code.js
 wwwroot\js\DeleteBrand.js
 wwwroot\js\DeleteCategory.js
 wwwroot\js\DeleteProduct.js

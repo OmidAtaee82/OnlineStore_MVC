@@ -18,10 +18,10 @@ namespace Entity
         public decimal Price{ get; set; }
         public int? Discount { get; set; }
         public string? Color { get; set; }
-        public int BrandId { get; set; }
+        public int? BrandId { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
-        public Brand Brand { get; set; }
+        public Brand? Brand { get; set; }
 
     }
 }

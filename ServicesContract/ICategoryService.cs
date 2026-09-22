@@ -15,6 +15,7 @@ namespace ServicesContract
         void AddCategory(Category category);
         void UpdateCategory(Category model);
         void DeleteCategory(int id);
+        List<Category> GetMainCategory();
 
     }
 }

@@ -93,5 +93,15 @@ namespace Services
 
         }
 
+
+        public List<Category> GetMainCategory()
+        {
+            var category = _OnlineStoreDb.Categories
+                .Where(x => x.ParentId == null)
+                .ToList();
+
+            return category;
+        }
+
     }
 }

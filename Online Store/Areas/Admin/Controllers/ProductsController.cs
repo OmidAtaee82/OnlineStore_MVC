@@ -32,7 +32,7 @@ namespace Online_Store.Areas.Admin.Controllers
                 Price = x.Price,
                 Discount = x.Discount,
                 Color = x.Color,
-                BrandName = x.Brand.Name,
+                BrandName = x.Brand?.Name,
                 CategoryName = x.Category.Name
             }).ToList();
 
@@ -54,7 +54,7 @@ namespace Online_Store.Areas.Admin.Controllers
                 model.Price = product.Price;
                 model.Discount = product.Discount;
                 model.Color = product.Color;
-                model.BrandName = product.Brand.Name;
+                model.BrandName = product.Brand?.Name;
                 model.CategoryName = product.Category.Name;
             }
             return View(model);

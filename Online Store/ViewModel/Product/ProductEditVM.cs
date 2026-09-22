@@ -28,8 +28,7 @@ namespace Online_Store.ViewModel.Product
 
         public string? Color { get; set; }
 
-        [Range(1, int.MaxValue, ErrorMessage = "انتخاب برند محصول الزامی است")]
-        public int BrandId { get; set; }
+        public int? BrandId { get; set; }
 
         [Range(1, int.MaxValue, ErrorMessage = "انتخاب دسته بندی محصول الزامی است")]
         public int CategoryId { get; set; }

@@ -17,6 +17,8 @@ namespace ServicesContract
         void AddProduct(Product model);
         void UpdateProduct(Product model);
         void DeleteProduct(int id);
+        List<Product> GetAmazingProduct();
+        List<Product> GetNewProduct();
 
     }
 }

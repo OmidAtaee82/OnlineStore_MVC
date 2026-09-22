@@ -111,6 +111,29 @@ namespace Services
             _OnlineStoreDb.SaveChanges();
 
         }
+
+
+        public List<Product> GetAmazingProduct()
+        {
+            var amazingProduct = _OnlineStoreDb.Products
+                .Where(x => x.Discount != null)
+                .Take(6)
+                .ToList();
+
+            return amazingProduct;
+
+        }
+
+
+        public List<Product> GetNewProduct()
+        {
+            var newProduct = _OnlineStoreDb.Products
+                .OrderByDescending(x => x.Id)
+                .Take(6)
+                .ToList();
+
+            return newProduct;
+        }
         
 
     }
