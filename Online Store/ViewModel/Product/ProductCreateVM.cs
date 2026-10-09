@@ -34,6 +34,8 @@ namespace Online_Store.ViewModel.Product
         public List<Brand> Brands { get; set; } = new();
 
         public List<Category> Categories { get; set; } = new();
+        public DateTime CreatedAt { get; set; }
+        public int Stock { get; set; }
 
     }
 }

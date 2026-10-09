@@ -107,6 +107,8 @@ namespace Online_Store.Areas.Admin.Controllers
                 Color = model.Color , 
                 BrandId = model.BrandId , 
                 CategoryId = model.CategoryId , 
+                Stock = model.Stock , 
+                CreatedAt = DateTime.UtcNow
             });
 
             return RedirectToAction("Products");

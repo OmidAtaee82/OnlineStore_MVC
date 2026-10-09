@@ -1,0 +1,414 @@
+﻿@using Online_Store.ViewModel.CategoryPage
+@model CategoryPageVM
+
+@{
+    ViewBag.Title = "دسته بندی هر محصول";
+}
+
+
+<!-- Banner -->
+<div class="w-full h-[400px] lg:mt-[155px] mt-10">
+
+    <div class="lg:w-[1270px] w-full h-full m-auto mt-8 rounded-3xl">
+
+        <div class="w-full m-auto flex gap-5 text-[#1F2937]">
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+
+            <div class="flex items-center gap-4">
+                <a href="#" class="font-yekan text-base">خانه</a>
+                <span>/</span>
+                <a href="#" class="font-yekan text-base">موبایل</a>
+            </div>
+
+        </div>
+
+        <img src="/img/251.png" alt="" class="w-full h-auto rounded-3xl mt-7" id="carusel-img" />
+
+    </div>
+
+</div>
+
+
+<!-- Category -->
+<div class="w-full mt-24">
+
+    <div class="w-1270 lg:w-[90%] m-auto">
+
+        <div class="w-full m-auto flex gap-6">
+
+            @foreach(var item in Model.Categories)
+            {
+                <a href="#">
+                    <div class="w-48 border-2 border-[#E5E7EB] bg-white pt-4 pb-4 rounded-2xl">
+
+                        <div class="w-28 h-24 m-auto">
+                            <img src="@item.CategoryImage" alt="" class="w-full h-full" />
+                        </div>
+
+                        <div class="w-full m-auto text-center font-yekan text-[17px] mt-4 text-[#1F2937]">@item.Name</div>
+
+                    </div>
+                </a>
+            }
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- product category -->
+<div class="w-full mt-14 lg:block hidden">
+
+    <div class="w-1270 lg:w-[90%] m-auto">
+
+        <div class="w-full m-auto flex justify-between items-start">
+
+
+            <!-- sidebar -->
+            <div class="w-[20%] h-[500px] border-2 pb-6 border-gray-200 bg-white sticky top-4 rounded-2xl sidebar-product">
+
+                <div class="w-full m-auto p-4 font-sahel text-xl rounded-t-xl text-[#005be7]">
+                    فیلتر ها
+                </div>
+
+                <div class="w-full m-auto mt-4 text-lg font-yekan pr-4">
+                    محدوده قیمت
+                </div>
+
+                <div class="w-full m-auto mt-4 flex justify-center relative pr-3 pl-3">
+                    <input id="minRange" type="range" min="0" max="100" value="0" class="w-[50%]" />
+                    <input id="maxRange" type="range" min="0" max="200" value="200" class="w-[50%]" />
+                </div>
+
+                <div class="w-full m-auto mt-4 flex justify-between">
+                    <p id="minPrice" class="font-yekan pr-4 text-slate-500"></p>
+                    <p id="maxPrice" class="font-yekan pl-4 text-slate-500"></p>
+                </div>
+
+                <div class="w-full h-1 bg-gray-300 mt-5"></div>
+
+                <!-- brand -->
+                <div class="w-full mt-4 font-yekan pr-4 pl-4 text-lg flex flex-wrap justify-between items-center">
+
+                    <p class="text-[#1F2937]">برند</p>
+
+                    <i class="fa-solid fa-chevron-down text-[#1F2937]"></i>
+
+                    <div class="w-full hidden">
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>ام اس آی</label>
+                            </div>
+
+                            <p class="text-[15px]">MSI</p>
+
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>اچ پی</label>
+                            </div>
+
+                            <p class="text-[15px]">HP</p>
+
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>اپل</label>
+                            </div>
+
+                            <p class="text-[15px]">Apple</p>
+
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>لنوو</label>
+                            </div>
+
+                            <p class="text-[15px]">lenovo</p>
+
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>سامسونگ</label>
+                            </div>
+
+                            <p class="text-[15px]">samsung</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full h-1 bg-gray-300 mt-5"></div>
+
+                <!-- color -->
+                <div class="w-full mt-4 font-yekan pr-4 pl-4 text-lg flex flex-wrap justify-between items-center">
+
+                    <p class="text-[#1F2937]">رنگ</p>
+
+                    <i class="fa-solid fa-chevron-down text-[#1F2937]"></i>
+
+                    <div class="w-full hidden">
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>طوسی</label>
+                            </div>
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>مشکی</label>
+                            </div>
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>آبی</label>
+                            </div>
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>قرمز</label>
+                            </div>
+                        </div>
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <input type="checkbox" class="w-5 h-5" />
+                                <label>سبز</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full h-[0.5px] bg-gray-300 mt-5"></div>
+
+                <!-- product status -->
+                <div class="w-full mt-4 font-yekan pr-4 pl-4 text-lg flex flex-wrap justify-between items-center">
+
+                    <p class="text-[#1F2937]">وضعیت کالا</p>
+
+                    <i class="fa-solid fa-chevron-down text-[#1F2937]"></i>
+
+                    <div class="w-full hidden">
+
+                        <div class="w-full text-[#374151] mt-4 text-[17px] flex items-center justify-between">
+
+                            <p>فقط کالاهای موجود</p>
+
+                            <div class="w-14 h-6 border-2 border-[#374151] rounded-full flex items-center justify-end">
+                                <span class="w-5 h-5 rounded-full bg-[#374151]"></span>
+                            </div>
+
+                            <div class="w-14 h-6 bg-[#005be7] rounded-full hidden items-center justify-start">
+                                <span class="w-5 h-5 rounded-full bg-white block"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- products -->
+            <div class="w-[75%]">
+
+                <div class="w-full h-[65px] m-auto flex gap-10 items-center bg-white border-2 border-[#E5E7EB] pr-3 pl-3 rounded-xl">
+
+                    <div class="font-yekan flex items-center gap-4">
+                        <svg color="#4B5563" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                        </svg>
+                        <p class="text-[#4B5563]">مرتب سازی بر اساس : </p>
+                    </div>
+
+                    <select class="font-yekan bg-gray-50 w-52 h-10 border-1 border-gray-300 text-[#374151] rounded-lg pr-3">
+                        <option>پر فروش ترین ها</option>
+                        <option>گران ترین ها</option>
+                        <option>ارزان ترین ها</option>
+                    </select>
+
+                </div>
+
+                <div class="w-full m-auto mt-9 grid grid-cols-4 gap-5">
+
+                    @foreach(var item in Model.Products)
+                    {
+                        <div class="border-2 border-[#E5E7EB] bg-white pb-5 rounded-2xl">
+
+                            <div class="w-[88%] h-40 m-auto mt-5">
+                                <img src="@item.ProductImage" alt="" class="w-full h-full object-contain" />
+                            </div>
+
+                            <div class="w-full m-auto mt-5 text-center text-[#1F2937] line-clamp-1 font-yekan pr-4 pl-4">
+                               @item.Name
+                            </div>
+
+                            <div class="w-full persian-number m-auto mt-5 text-center text-[#005be7] font-sahel text-lg pr-4 pl-4">
+                                @item.Price.ToString("0")
+                                تومان
+                            </div>
+
+                            <a href="#"
+                               class="w-[85%] p-2 rounded-lg text-white bg-[#005be7] m-auto mt-5 flex justify-center gap-2 font-yekan text-[15px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                افزودن به سبد خرید
+                            </a>
+
+                        </div>
+                    }
+
+                </div>
+
+
+                <div class="w-full m-auto mt-9 flex justify-center items-center gap-5">
+
+                    <button>
+                        <i class="fa-solid fa-chevron-right text-xl text-[#005be7]"></i>
+                    </button>
+
+                    <span class="w-9 h-9 bg-[#005be7] flex items-center justify-center text-white font-yekan rounded-lg">1</span>
+                    <span class="w-9 h-9 bg-[#daeefd] flex items-center justify-center text-[#1F2937] font-yekan rounded-lg">2</span>
+                    <span class="w-9 h-9 bg-[#daeefd] flex items-center justify-center text-[#1F2937] font-yekan rounded-lg">3</span>
+                    <span class="w-9 h-9 bg-[#daeefd] flex items-center justify-center text-[#1F2937] font-yekan rounded-lg">4</span>
+                    <span class="w-9 h-9 bg-[#daeefd] flex items-center justify-center text-[#1F2937] font-yekan rounded-lg">5</span>
+
+                    <button class="font-bold">
+                        <i class="fa-solid fa-chevron-left text-xl text-[#005be7]"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Service -->
+<div class="w-full mt-14">
+
+    <div class="lg:w-1270 w-[90%] m-auto">
+
+        <div class="w-full m-auto flex lg:flex-nowrap flex-wrap justify-center lg:gap-12 gap-6">
+
+            <div class="lg:w-1/4 w-[90%] bg-[#eef6fc] border-2 border-[#dbebf8] rounded-xl">
+
+                <div class="w-[80%] m-auto font-yekan flex lg:justify-center justify-start items-center gap-4">
+                    <svg class="w-[50px] h-[50px] text-[#054ad0]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>
+                    <p>ارسال سریع</p>
+                </div>
+
+                <div class="w-[80%] m-auto pb-4 font-yekan flex lg:justify-end justify-start items-center lg:pl-4 pr-16 text-sm">
+                    <p>در کمتر از 24 ساعت</p>
+                </div>
+
+            </div>
+
+            <div class="lg:w-1/4 w-[90%] bg-[#eef6fc] border-2 border-[#dbebf8] rounded-xl">
+
+                <div class="w-[80%] m-auto font-yekan flex lg:justify-center justify-start items-center gap-4">
+                    <svg class="w-[50px] h-[50px] text-[#054ad0]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                    </svg>
+                    <p>پرداخت امن</p>
+                </div>
+
+                <div class="w-[80%] m-auto pb-4 font-yekan flex lg:justify-end justify-start items-center lg:pl-8 pr-16 text-sm">
+                    <p>با تمامی کارت ها</p>
+                </div>
+
+            </div>
+
+            <div class="lg:w-1/4 w-[90%] bg-[#eef6fc] border-2 border-[#dbebf8] rounded-xl">
+
+                <div class="w-[80%] m-auto font-yekan flex lg:justify-center justify-start items-center gap-4">
+                    <svg class="w-[50px] h-[50px] text-[#054ad0]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                    </svg>
+                    <p>پشتیبانی 24 ساعته</p>
+                </div>
+
+                <div class="w-[80%] m-auto pb-4 font-yekan flex lg:justify-end justify-start items-center lg:pl-9 pr-16 text-sm">
+                    <p>همیشه در کنار شما</p>
+                </div>
+
+            </div>
+
+            <div class="lg:w-1/4 w-[90%] bg-[#eef6fc] border-2 border-[#dbebf8] rounded-xl">
+
+                <div class="w-[80%] m-auto font-yekan flex lg:justify-center justify-start items-center gap-4">
+                    <svg class="w-[50px] h-[50px] text-[#054ad0]" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+                    </svg>
+                    <p>ضمانت بازگشت کالا</p>
+                </div>
+
+                <div class="w-[80%] m-auto pb-4 font-yekan flex lg:justify-end justify-start items-center lg:pl-4 pr-16 text-sm">
+                    <p>تا 30 روز امکان بازگشت</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="/js/Category.js"></script>

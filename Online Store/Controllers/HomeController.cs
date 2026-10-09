@@ -27,6 +27,7 @@ namespace Online_Store.Controllers
 
             var category = _categoryService.GetMainCategory().Select(x=>new CategoryVM
             {
+                Id = x.Id , 
                 Name = x.Name , 
                 CategoryImage = x.CategoryImage , 
             }).ToList();

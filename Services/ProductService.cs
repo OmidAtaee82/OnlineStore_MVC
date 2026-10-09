@@ -134,6 +134,23 @@ namespace Services
 
             return newProduct;
         }
+
+
+        public List<Product> GetProductsByCategory(int id)
+        {
+
+            var categoryIds = _OnlineStoreDb.Categories
+                .Where(x => x.ParentId == id)
+                .Select(x=>x.Id)
+                .ToList();
+
+            var products = _OnlineStoreDb.Products
+                .Where(x=>categoryIds.Contains(x.CategoryId))
+                .ToList();
+
+            return products;
+
+        }
         
 
     }

@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Online_Store.ViewModel.CategoryPage
+@model CategoryPageVM
+
+@{
     ViewBag.Title = "همه دسته بندی ها";
 }
 
@@ -22,77 +25,20 @@
 
         <div class="w-full m-auto grid lg:grid-cols-6 grid-cols-2 gap-4">
 
-            <a href="category.html">
-                <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
+            @foreach(var item in Model.Categories)
+            {
+                <a href="#">
+                    <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
 
-                    <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
-                        <img src="" alt="" />
+                        <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
+                            <img src="@item.CategoryImage" alt="" class="w-full h-full object-cover"/>
+                        </div>
+
+                        <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">@item.Name</div>
+
                     </div>
-
-                    <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">ژاکت و سویشرت</div>
-
-                </div>
-            </a>
-
-            <a href="category.html">
-                <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
-
-                    <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">شومیز</div>
-
-                </div>
-            </a>
-
-            <a href="category.html">
-                <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
-
-                    <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">مانتو</div>
-
-                </div>
-            </a>
-
-            <a href="category.html">
-                <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
-
-                    <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">لباس مجلسی</div>
-
-                </div>
-            </a>
-
-            <a href="category.html">
-                <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
-
-                    <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">لباس راحتی</div>
-
-                </div>
-            </a>
-
-            <a href="category.html">
-                <div class="bg-[#eef6fc] border-2 border-[#dbebf8] h-52 rounded-2xl">
-
-                    <div class="w-28 h-28 bg-[#d8ebfa] m-auto rounded-full mt-5">
-                        <img src="" alt="" />
-                    </div>
-
-                    <div class="w-[90%] text-[#4d5160] m-auto mt-6 text-center font-yekan">شلوار</div>
-
-                </div>
-            </a>
+                </a>
+            }
 
         </div>
 

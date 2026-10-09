@@ -59,7 +59,7 @@ namespace Online_Store.Areas.Admin.Controllers
         public IActionResult CategoriesCreate()
         {
             var category = _categoryService.GetAllCategory()
-                .Where(x=>x.ParentId == null)
+                //.Where(x=>x.ParentId == null)
                 .Select(x=>new CategoryVM
             {
                 Id = x.Id , 

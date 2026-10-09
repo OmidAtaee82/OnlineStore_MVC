@@ -22,6 +22,8 @@ namespace Entity
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         public Brand? Brand { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public int Stock { get; set; }
 
     }
 }

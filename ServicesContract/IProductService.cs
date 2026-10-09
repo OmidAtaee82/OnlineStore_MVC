@@ -19,6 +19,7 @@ namespace ServicesContract
         void DeleteProduct(int id);
         List<Product> GetAmazingProduct();
         List<Product> GetNewProduct();
+        List<Product> GetProductsByCategory(int id);
 
     }
 }

@@ -859,6 +859,7 @@ G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\tablet-screen-button.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\brands\forgejo.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\solid\face-grin-tongue-squint.svg
+G:\proje-DotNet\Online Store\Online Store\wwwroot\js\Category.js
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\arrow-down-wide-short.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\hands-holding-child.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\solid\paper-plane.svg
@@ -3323,7 +3324,6 @@ G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\circle-right.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\brands\themeco.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\regular\hand-point-right.svg
-G:\proje-DotNet\Online Store\Online Store\wwwroot\js\DeleteProduct.js
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\sliders-h.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\brands\edge.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\money-check-dollar.svg
@@ -4650,6 +4650,7 @@ G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\solid\trash-can.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\solid\prescription-bottle.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\sort-numeric-down-alt.svg
+G:\proje-DotNet\Online Store\Online Store\wwwroot\js\DeleteProducts.js
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs-full\solid\restroom.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\solid\filter.svg
 G:\proje-DotNet\Online Store\Online Store\wwwroot\fontawesome-free-7.3.1-web\svgs\brands\glide-g.svg
@@ -11666,12 +11667,19 @@ wwwroot\img\251.png
 wwwroot\img\252.png
 wwwroot\img\253.png
 wwwroot\img\254.png
+wwwroot\img\a07.png
+wwwroot\img\A26.png
+wwwroot\img\A27.png
+wwwroot\img\A36.png
+wwwroot\img\A57.png
 wwwroot\img\adiddas.png
 wwwroot\img\apple.png
+wwwroot\img\asus1.png
 wwwroot\img\behdasht.png
 wwwroot\img\digital-kala.png
 wwwroot\img\gramkon.png
 wwwroot\img\huawi.png
+wwwroot\img\iphone.png
 wwwroot\img\kafgir.png
 wwwroot\img\kote.png
 wwwroot\img\laptop.png
@@ -11682,17 +11690,25 @@ wwwroot\img\mobile.png
 wwwroot\img\nike.png
 wwwroot\img\nimtane.png
 wwwroot\img\omid.png
+wwwroot\img\poco C71.png
+wwwroot\img\Redmi 15C.png
+wwwroot\img\Redmi A5.png
+wwwroot\img\redmi note14.png
+wwwroot\img\Redmi note15.png
 wwwroot\img\s1.png
 wwwroot\img\s2.png
 wwwroot\img\sam.png
 wwwroot\img\samsung.png
+wwwroot\img\Samsung_1.png
+wwwroot\img\Shiaumi.png
 wwwroot\img\sony.png
 wwwroot\img\t1.png
 wwwroot\img\t2.png
 wwwroot\img\top.png
 wwwroot\img\varzesh.png
+wwwroot\js\Category.js
 wwwroot\js\code.js
 wwwroot\js\DeleteBrand.js
 wwwroot\js\DeleteCategory.js
-wwwroot\js\DeleteProduct.js
+wwwroot\js\DeleteProducts.js
 wwwroot\js\Slider.js

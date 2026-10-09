@@ -157,9 +157,7 @@ G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\refint\Online Store.d
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.pdb
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\Online Store.genruntimeconfig.cache
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\ref\Online Store.dll
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\knub45c4s7-17i5fhn25h.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\t0ty9pr64l-zj4aqgbk34.gz
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\zn9b4q01eg-q30r6010ig.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\5wrc0ha2p9-5ymlur5v3w.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\yx42fwigkv-2tdvziitwh.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\5ym6wi0k07-g4w1ivf5gb.gz
@@ -5972,4 +5970,7 @@ G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\tidvmzz1b7
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\fwzvf3h9ij-yz5ec0l5y9.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\mty4apzd2o-ubvadgz6di.gz
 G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\g67avzjmc3-ysi9dqhjy0.gz
-G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-lbf11ueolq.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\zn9b4q01eg-r4otxpoqhs.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\t49n6esfst-uiebojd5ro.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\5cqn5ixff1-vuwu3w2yrx.gz
+G:\proje-DotNet\Online Store\Online Store\obj\Debug\net9.0\compressed\q0p6y3gs1b-zzbvd731i0.gz

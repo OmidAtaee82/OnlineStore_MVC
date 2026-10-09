@@ -103,5 +103,18 @@ namespace Services
             return category;
         }
 
+
+        public List<Category> GetChildCategory(int id)
+        {
+            var category = _OnlineStoreDb.Categories
+                .Where(x => x.ParentId == id)
+                .ToList();
+
+            return category;
+        }
+
+
+
+
     }
 }

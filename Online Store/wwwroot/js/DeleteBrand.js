@@ -1,4 +1,4 @@
-﻿function openModalBrand(id , name , image) {
+﻿function openModalBrand(id, name, image) {
 
     document.getElementById("delete-brand").classList.remove("hidden");
     document.getElementById("title-delete").innerText = name;
