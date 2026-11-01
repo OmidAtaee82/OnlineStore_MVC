@@ -189,13 +189,15 @@
                 </div>
             </div>
 
-            <p class="flex items-center gap-[5px] text-[#054ad0] font-sahel mt-[6.5px]">
-                مشاهده همه
-                <svg class="w-5 h-5 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                     stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                </svg>
-            </p>
+            <a href="#">
+                <p class="flex items-center gap-[5px] text-[#054ad0] font-sahel mt-[6.5px]">
+                    مشاهده همه
+                    <svg class="w-5 h-5 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </p>
+            </a>
 
         </div>
 
@@ -213,7 +215,7 @@
             @foreach(var item in Model.products)
             {
 
-                <a href="#">
+                <a href="/products/@item.Id">
                     <div class="border-2 border-gray-200 pr-3 pl-3 pt-4 pb-4 flex flex-col rounded-xl relative">
 
                         <span class="absolute persian-number top-3 left-2 bg-[#e93638] text-white font-sahel p-2 h-[30px] flex items-center text-sm rounded-md">12%</span>
@@ -276,7 +278,7 @@
 
             @foreach(var item in Model.newProducts)
             {
-                <a href="#">
+                <a href="/products/@item.Id">
                     <div class="border-2 border-gray-200 pr-3 pl-3 pt-4 pb-4 flex flex-col rounded-xl relative">
 
                         <div class="w-32 h-32 m-auto">

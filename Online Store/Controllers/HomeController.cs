@@ -34,12 +34,14 @@ namespace Online_Store.Controllers
 
             var brand = _brandservice.GetAllBrands().Select(x => new BrandVM
             {
+                Id = x.Id , 
                 Name = x.Name,
                 BrandImage = x.BrandImage,
             }).ToList();
 
             var amazingProduct = _productService.GetAmazingProduct().Select(x=>new ProductVM
             {
+                Id = x.Id , 
                 Name = x.Name,
                 Description = x.Description , 
                 ProductImage = x.ProductImage , 
@@ -53,6 +55,7 @@ namespace Online_Store.Controllers
 
             var newProduct = _productService.GetNewProduct().Select(x=>new ProductVM
             {
+                Id = x.Id , 
                 Name = x.Name , 
                 Description = x.Description , 
                 ProductImage = x.ProductImage , 

@@ -19,6 +19,11 @@ namespace Entity
         public DbSet<Category> Categories { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -29,6 +34,17 @@ namespace Entity
             modelBuilder.Entity<Category>().ToTable("Categories");
             modelBuilder.Entity<Brand>().ToTable("Brands");
             modelBuilder.Entity<Blog>().ToTable("Blogs");
+            modelBuilder.Entity<User>().ToTable("Users");
+
+            modelBuilder.Entity<Cart>()
+                .HasOne(x => x.User)
+                .WithOne(x => x.Cart)
+                .HasForeignKey<Cart>(x => x.UserId);
+
+            modelBuilder.Entity<CartItem>().ToTable("CartItems");
+
+            modelBuilder.Entity<Order>().ToTable("Orders");
+            modelBuilder.Entity<OrderItem>().ToTable("OrderItems");
         }
 
     }
