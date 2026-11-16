@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class OmidOnlineStoreDB:DbContext
+    public class OmidOnlineStoreDB:IdentityDbContext<ApplicationUser>
     {
 
         public OmidOnlineStoreDB(DbContextOptions options):base(options)
@@ -19,7 +20,6 @@ namespace Entity
         public DbSet<Category> Categories { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Blog> Blogs { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
@@ -34,16 +34,19 @@ namespace Entity
             modelBuilder.Entity<Category>().ToTable("Categories");
             modelBuilder.Entity<Brand>().ToTable("Brands");
             modelBuilder.Entity<Blog>().ToTable("Blogs");
-            modelBuilder.Entity<User>().ToTable("Users");
+            modelBuilder.Entity<Order>().ToTable("Orders");
 
             modelBuilder.Entity<Cart>()
                 .HasOne(x => x.User)
                 .WithOne(x => x.Cart)
                 .HasForeignKey<Cart>(x => x.UserId);
 
-            modelBuilder.Entity<CartItem>().ToTable("CartItems");
+            modelBuilder.Entity<Order>()
+                .HasOne(x => x.User)
+                .WithMany(x => x.Orders)
+                .HasForeignKey(x => x.UserId);
 
-            modelBuilder.Entity<Order>().ToTable("Orders");
+            modelBuilder.Entity<CartItem>().ToTable("CartItems");
             modelBuilder.Entity<OrderItem>().ToTable("OrderItems");
         }
 

@@ -11681,11 +11681,14 @@ wwwroot\img\gramkon.png
 wwwroot\img\huawi.png
 wwwroot\img\iphone.png
 wwwroot\img\kafgir.png
+wwwroot\img\karid-asan.png
 wwwroot\img\kote.png
 wwwroot\img\laptop.png
 wwwroot\img\lebas.png
 wwwroot\img\leg.png
+wwwroot\img\login.png
 wwwroot\img\logo.png
+wwwroot\img\logo-password.png
 wwwroot\img\mobile.png
 wwwroot\img\nike.png
 wwwroot\img\nimtane.png

@@ -12,9 +12,9 @@ namespace Entity
 
         [Key]
         public int Id { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; } = null!;
+        public ApplicationUser User { get; set; } = null!;
         public ICollection<CartItem>? CartItems { get; set; } = new List<CartItem>();
-        public User? User { get; set; }
 
     }
 }

@@ -3,3 +3,13 @@
         return "۰۱۲۳۴۵۶۷۸۹"[digit];
     });
 });
+
+
+const accountBtn = document.getElementById("accountBtn");
+const accountMenu = document.getElementById("accountMenu");
+
+accountBtn.addEventListener("click", function () {
+
+    accountMenu.classList.toggle("hidden");
+
+});

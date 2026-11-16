@@ -218,3 +218,13 @@
 .sidebar-product {
     scrollbar-width: none;
 }
+
+
+.bg-gradient {
+    background: linear-gradient(#014edb, #361df4, #014edb);
+}
+
+
+.shadow-login {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
