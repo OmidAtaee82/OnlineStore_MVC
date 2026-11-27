@@ -1,6 +1,7 @@
 using Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Online_Store.Infrastructure;
 using Services;
 using ServicesContract;
 
@@ -27,6 +28,7 @@ builder.Services.AddScoped<ICategoryService , CategoryService>();
 builder.Services.AddScoped<IBrandService, BrandService>();
 
 var app = builder.Build();
+await RoleSeeder.SeedRolesAsync(app.Services);
 
 app.UseStaticFiles();
 

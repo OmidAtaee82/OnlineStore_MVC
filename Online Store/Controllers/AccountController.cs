@@ -1,7 +1,9 @@
 ﻿using Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Online_Store.ViewModel.Auth;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Online_Store.Controllers
 {
@@ -48,6 +50,18 @@ namespace Online_Store.Controllers
 
             if (result.Succeeded)
             {
+                var roleResult = await _userManager.AddToRoleAsync(user , "Customer");
+
+                if (!roleResult.Succeeded)
+                {
+                    foreach(var error in roleResult.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+
+                    return View(model);
+                }
+
                 await _signInManager.SignInAsync(user, isPersistent: false);
 
                 return Redirect("/");
@@ -114,6 +128,14 @@ namespace Online_Store.Controllers
         {
             await _signInManager.SignOutAsync();
             return Redirect("/");
+        }
+
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
 
     }

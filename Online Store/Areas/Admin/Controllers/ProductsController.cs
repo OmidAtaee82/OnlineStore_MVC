@@ -1,4 +1,5 @@
 ﻿using Entity;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Online_Store.ViewModel.Product;
 using ServicesContract;
@@ -7,6 +8,8 @@ namespace Online_Store.Areas.Admin.Controllers
 {
 
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
+
     public class ProductsController : Controller
     {
 
